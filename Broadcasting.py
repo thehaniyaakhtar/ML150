@@ -15,5 +15,7 @@ When adding b to X, Numpy treats b as if it repeats across every row
 Each row in X gets the same column wise bias added.
 
 When multiplying with w, each row of the result needs to be scaled 
-to a different value., by viewing w as a column instead of a row, NumPy understands each value in w belongs to a row and it applies the value across the whole row.
+to a different value, by viewing w as a column instead of a row, NumPy 
+understands each value in w belongs to a row and it applies the value across 
+the whole row.
 '''
