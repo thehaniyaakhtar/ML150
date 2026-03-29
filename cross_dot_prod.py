@@ -11,3 +11,7 @@ np.dot(A, B)
 # 0: perpendicular
 # negative: opp direction
 
+# Cross Product 
+np.cross(A, B)
+# returns a vector perpendicular to both A and B
+# it requires vectors of the same length
