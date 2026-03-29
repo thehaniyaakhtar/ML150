@@ -33,3 +33,25 @@ mean = np.mean(A[A>2])
 print(mean)
 # compute stats of only selected values
 
+# uses
+
+# ReLU Activation
+A = np.array([-2, -1, 0, 1, 2])
+A[A < 0] = 0
+
+# ignoring padding
+A = np.array([1, 2, 0, 0, 0, 0])
+mask = A != 0
+print(np.mean(A[mask]))
+# ignores useless values
+
+# Loss Functions
+errors = np.array([1.0, 0.5, 2.0, 0.2])
+large_errors = errors > 1
+print(errors[large_errors])
+# print large errors
+
+# Clipping values
+A = np.array([1, 5, 10, 20])
+A[A > 10] = 10
+# preventing exploding values
